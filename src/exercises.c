@@ -30,12 +30,12 @@ int main(int argc, char **argv) {
   }
   printf("\n");
 
-  ANSWER 
+  //ANSWER 
 
   int i=10;
   while (i<20){
     printf("%d " ,i);
-    i +=3
+    i +=3;
   }
   printf("\n");
 
@@ -48,7 +48,7 @@ int main(int argc, char **argv) {
   }
   printf("\n");
 
-  ANSWER
+ // ANSWER
 
   for(int k=3; k>-4; k--){
      printf("%d" ,k);
@@ -59,12 +59,12 @@ int main(int argc, char **argv) {
   //3. Print numbers 1 thru n separated by a comma except for
   //   the last one; example: 1, 2, 3, 4, 5
 
-  ANSWER 
+  //ANSWER 
 
   printf("Enter a number: ");
-  scanf(%d ,&n);
+  scanf("%d" ,&n);
 
-  for(i = 1; i <=n; i++){
+  for(i = 1; i <= n; i++){
     if(i<n){
       printf("%d,",i);
     } else{
@@ -77,24 +77,24 @@ int main(int argc, char **argv) {
   //4. Print squares of numbers 1 thru n separated by a comma
   //   except for the last one; example: 1, 4, 9, 16, 25
 
-  ANSWER 
+  //ANSWER 
 
-  printf("Enter a number;");
-  scanf("%d",&n);
+ printf("Enter a number: ");
+    scanf("%d", &n); 
 
-   for(i=1; i<=n; i++){
-      printf("d", i*i);
-      if(i<n){
-        prinf(",");
-      }
-   } 
-
-   printf("\n");
+    for (i = 1; i <= n; i++) {
+        printf("%d", i * i);
+        if (i < n) {
+            printf(", ");
+        }
+    }
+    
+    printf("\n");
 
   //5. Compute the summation of numbers 1 thru n and print
   //   the result; example: 1 + 2 + 3 + 4 + 5 = 15
 
-  ANSWER
+ // ANSWER
 
   int sum;
   printf("Enter a positive integer (n): ");
@@ -108,7 +108,7 @@ int main(int argc, char **argv) {
   //6. Compute the summation of squares of numbers 1 thru n
   //   and print the result; example: 1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 55
 
-  ANSWER
+ // ANSWER
 
   printf("Enter a positive integer n:");
   scanf("%d" ,&n);
@@ -122,7 +122,7 @@ int main(int argc, char **argv) {
   //7. Compute the summation of even numbers 1 thru n and print
   //   the result; example (n=5): 2 + 4 = 6
 
-  ANSWER
+  //ANSWER
 
   printf("Enter the values of n: ");
   scanf("%d" ,&n );
@@ -141,9 +141,9 @@ int main(int argc, char **argv) {
   //   If the integer is divisible by 11 print "Bar" instead.  If
   //   the integer is divisible by both 7 and 11, print "FooBar"
 
-  ANSWER 
+  //ANSWER 
 
- viod fooBarFizzBuzz(int n) {
+ void fooBarFizzBuzz(int n) {
     for (int i = 1; i <= n; ++i) {
         if (i % 7 == 0 && i % 11 == 0) {
             printf("FooBar\n");
@@ -160,10 +160,5 @@ int main(int argc, char **argv) {
     printf("Enter a number: ");
     scanf("%d", &n);
     fooBarFizzBuzz(n);
-  return 0;
-
-}
-  //   instead.
-
-  return 0;
+return 0;
 }
