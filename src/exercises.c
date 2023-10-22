@@ -40,12 +40,6 @@ int main(int argc, char **argv) {
   printf("\n");
 
 
-
-
-
-
-
-
   //2. Rewrite the given while loop as an equivalent for loop
   int k = 3;
   while(k > -4) {
@@ -53,6 +47,14 @@ int main(int argc, char **argv) {
     k--;
   }
   printf("\n");
+
+  ANSWER
+
+  for(int k=3; k>-4; k--){
+     printf("%d" ,k);
+  }
+  printf("\n");
+  
 
   //3. Print numbers 1 thru n separated by a comma except for
   //   the last one; example: 1, 2, 3, 4, 5
